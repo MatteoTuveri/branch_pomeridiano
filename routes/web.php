@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,'index'])->name('home');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/movies', [HomeController::class, 'movies'])->name('movies');
 
 Route::get('/book',[HomeController::class,'book'])->name('book');
+
